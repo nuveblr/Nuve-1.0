@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuvé - Artisanal Home Bakery</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="../Assets/Images/Favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../Assets/Images/Favicon.png" type="image/x-icon">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- External Files -->
+  <link rel="stylesheet" href="../Assets/CSS/style.css">
+
+  <!-- External SDKs -->
+  <script src="/_sdk/element_sdk.js"></script>
+  <script src="/_sdk/data_sdk.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style> @view-transition { navigation: auto; }</style>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header-wrapper" id="header">
+        <header class="flex items-center justify-between px-4 py-4">
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../Assets/Images/Logo Header.png" alt="Nuvé Logo" class="w-32 md:w-40">
+                </a>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-2 text-lg font-semibold">
+                <a href="../index.html" class="hover:text-rose-500 transition">Home</a>
+                <a href="../Menu/Menu.html" class="hover:text-rose-500 transition">Menu</a>
+                <a href="../About/about.html" class="hover:text-rose-500 transition">About Us</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn text-3xl md:hidden" aria-label="Menu">☰</button>
+        </header>
+    </div>
+
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-image">
+            <img src="../Assets/Images/temp1.jpg" alt="Founders Image">
+        </div>
+    </section>
+
+
+    <!-- Story Section -->
+    <section class="story-section">
+        <div class="story-content">
+            <h2 class="brand-heading" id="brandHeading">About The Founders</h2>
+            <p class="brand-description" id="brandDescription">Founded in the heart of Bangalore, Nuvé started as a passion project in our home kitchen. What began with baking for friends and family has blossomed into a journey of creating memorable moments through handcrafted baked goods. Every treat tells a story, and we're honored to be part of yours.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+
+            <!-- Left: Quick Links -->
+            <div class="footer-section footer-left">
+                <h3 class="footer-title">Quick Links</h3>
+                <ul class="footer-links-list">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../Menu/Menu.html">Menu</a></li>
+                    <li><a href="../About/about.html">About Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Center: Logo -->
+            <div class="footer-section footer-center">
+                <img src="../Assets/Images/Logo Header.png" alt="Nuvé Logo" class="footer-logo-img">
+                <p class="footer-tagline">Comfort • Craft • Community</p>
+            </div>
+
+            <!-- Right: Follow Us -->
+            <div class="footer-section footer-right">
+                <h3 class="footer-title">Follow Us</h3>
+                <a href="https://instagram.com/nuve.blr" target="_blank" rel="noopener noreferrer" class="instagram-btn flex items-center justify-center w-12 h-12 mx-auto rounded-full bg-gradient-to-r from-purple-500 to-pink-500 hover:scale-110 transition-transform">
+                    <i class="fa-brands fa-instagram text-white text-xl"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Bottom Copyright Bar -->
+        <div class="footer-bottom">
+        © 2025 Nuvé. All rights reserved.
+        </div>
+    </footer>
+
+
+    <script src="../Assets/JS/script.js" defer></script>
+
+</body>
+</html>

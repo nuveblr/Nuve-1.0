@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuvé - Artisanal Home Bakery</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="Assets/Images/Favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="Assets/Images/Favicon.png" type="image/x-icon">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- External Files -->
+  <link rel="stylesheet" href="Assets/CSS/style.css">
+
+  <!-- External SDKs -->
+  <script src="/_sdk/element_sdk.js"></script>
+  <script src="/_sdk/data_sdk.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style> @view-transition { navigation: auto; } </style>
+
+</head>
+
+<body>
+
+  <!-- Header -->
+  <div class="header-wrapper" id="header">
+      <header class="flex items-center justify-between px-4 py-4">
+
+          <!-- Logo -->
+          <div class="logo">
+              <a href="index.html">
+                  <img src="Assets/Images/Logo Header.png" alt="Nuvé Logo" class="w-32 md:w-40">
+              </a>
+          </div>
+
+          <!-- Desktop Navigation -->
+          <nav class="hidden md:flex space-x-2 text-lg font-semibold">
+              <a href="index.html" class="hover:text-rose-500 transition">Home</a>
+              <a href="Menu/Menu.html" class="hover:text-rose-500 transition">Menu</a>
+              <a href="About/about.html" class="hover:text-rose-500 transition">About Us</a>
+          </nav>
+
+          <!-- Mobile Menu Button -->
+          <button class="mobile-menu-btn text-3xl md:hidden" aria-label="Menu">☰</button>
+      </header>
+  </div>
+
+
+<section class="hero-carousel" aria-label="Hero carousel">
+  <div class="carousel-container" id="heroCarousel">
+    
+    <!-- Slides -->
+    <div class="carousel-slide active" data-index="0">
+      <img src="Assets/Images/1.webp" alt="Freshly baked croissants on display">
+    </div>
+
+    <div class="carousel-slide" data-index="1">
+      <img src="Assets/Images/2.jpg" alt="Chocolate cake on a wooden table">
+    </div>
+
+    <div class="carousel-slide" data-index="2">
+      <img src="Assets/Images/3.jpg" alt="Handmade cupcakes with frosting">
+    </div>
+
+    <div class="carousel-slide" data-index="3">
+      <img src="Assets/Images/4.webp" alt="Handmade cupcakes with frosting">
+    </div>
+
+    <div class="carousel-slide" data-index="4">
+      <img src="Assets/Images/5.webp" alt="Handmade cupcakes with frosting">
+    </div>
+
+    <div class="carousel-overlay" aria-hidden="true"></div>
+
+    <!-- Fixed Center Text -->
+    <div class="carousel-text" id="heroText" aria-hidden="false">
+      <h1>There Is No Sincerer Love<br>Than The Love Of Food</h1>
+      <p class="hero-tagline">Freshly baked. Truly homemade. Nuvé.</p>
+    </div>
+
+    <div class="carousel-dots" role="tablist" aria-label="Slide indicators">
+      <button class="dot active" data-slide="0" aria-label="Slide 1" role="tab"></button>
+      <button class="dot" data-slide="1" aria-label="Slide 2" role="tab"></button>
+      <button class="dot" data-slide="2" aria-label="Slide 3" role="tab"></button>
+      <button class="dot" data-slide="3" aria-label="Slide 4" role="tab"></button>
+      <button class="dot" data-slide="4" aria-label="Slide 5" role="tab"></button>
+    </div>
+  </div>
+</section>
+
+  <!-- Brand Introduction -->
+  <section class="brand-section" id="about">
+    <div class="brand-content">
+      <h2 class="brand-heading" id="brandHeading">Welcome to Nuvé</h2>
+      <p class="brand-description" id="brandDescription">
+        At Nuvé, we bring the joy of handcrafted bakes straight from our home kitchen in Bangalore.
+        Every treat is made with passion, precision, and a touch of love. Experience the warmth of
+        homemade goodness in every bite.
+      </p>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonial-section">
+    <h2 class="section-title">What Our Customers Say</h2>
+
+    <div class="testimonial-slider">
+      <div class="testimonial-track" id="testimonialTrack">
+        <div class="testimonial-card">
+          <h3 class="reviewer-name">Priya Sharma</h3>
+          <div class="star-rating">★★★★★</div>
+          <p class="testimonial-text">"The chocolate cake was absolutely divine! Fresh, moist, and beautifully decorated. Everyone in the family loved it!"</p>
+        </div>
+
+        <div class="testimonial-card">
+          <h3 class="reviewer-name">Rajesh Kumar</h3>
+          <div class="star-rating">★★★★★</div>
+          <p class="testimonial-text">"Ordered cookies for a corporate event. Everyone loved them!"</p>
+        </div>
+
+        <div class="testimonial-card">
+          <h3 class="reviewer-name">Revanth Reddy</h3>
+          <div class="star-rating">★★★★★</div>
+          <p class="testimonial-text">"Best red velvet cupcakes in Bangalore!"</p>
+        </div>
+
+        <div class="testimonial-card">
+          <h3 class="reviewer-name">Vikram Patel</h3>
+          <div class="star-rating">★★★★★</div>
+          <p class="testimonial-text">"Customized my daughter's birthday cake and it was perfect!"</p>
+        </div>
+
+        <div class="testimonial-card">
+          <h3 class="reviewer-name">Satish Nair</h3>
+          <div class="star-rating">★★★★★</div>
+          <p class="testimonial-text">"The brownies are to die for! Rich and fudgy."</p>
+        </div>
+
+        <div class="testimonial-card">
+          <h3 class="reviewer-name">Krishna Menon</h3>
+          <div class="star-rating">★★★★★</div>
+          <p class="testimonial-text">"Fresh, delicious, and made with care."</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider-controls">
+      <button class="slider-btn prev" id="prevBtn" aria-label="Previous"></button>
+      <button class="slider-btn next" id="nextBtn" aria-label="Next"></button>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+
+      <!-- Left: Quick Links -->
+      <div class="footer-section footer-left">
+        <h3 class="footer-title">Quick Links</h3>
+        <ul class="footer-links-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Menu/Menu.html">Menu</a></li>
+          <li><a href="About/about.html">About Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Center: Logo -->
+      <div class="footer-section footer-center">
+        <img src="Assets/Images/Logo Header.png" alt="Nuvé Logo" class="footer-logo-img">
+        <p class="footer-tagline">Comfort • Craft • Community</p>
+      </div>
+
+      <!-- Right: Follow Us -->
+      <div class="footer-section footer-right">
+        <h3 class="footer-title">Follow Us</h3>
+        <a href="https://instagram.com/nuve.blr" target="_blank" rel="noopener noreferrer" class="instagram-btn flex items-center justify-center w-12 h-12 mx-auto rounded-full bg-gradient-to-r from-purple-500 to-pink-500 hover:scale-110 transition-transform">
+          <i class="fa-brands fa-instagram text-white text-xl"></i>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Bottom Copyright Bar -->
+    <div class="footer-bottom">
+      © 2025 Nuvé. All rights reserved.
+    </div>
+  </footer>
+
+
+  <script src="Assets/JS/script.js" defer></script>
+
+</body>
+</html>

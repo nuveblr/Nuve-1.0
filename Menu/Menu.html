@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuvé - Artisanal Home Bakery</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="../Assets/Images/Favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../Assets/Images/Favicon.png" type="image/x-icon">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- External Files -->
+  <link rel="stylesheet" href="../Assets/CSS/style.css">
+
+  <!-- External SDKs -->
+  <script src="/_sdk/element_sdk.js"></script>
+  <script src="/_sdk/data_sdk.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style> @view-transition { navigation: auto; } </style>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header-wrapper" id="header">
+        <header class="flex items-center justify-between px-4 py-4">
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../Assets/Images/Logo Header.png" alt="Nuvé Logo" class="w-32 md:w-40">
+                </a>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-2 text-xl font-semibold">
+                <a href="../index.html" class="hover:text-rose-500 transition">Home</a>
+                <a href="Menu.html" class="hover:text-rose-500 transition">Menu</a>
+                <a href="../About/about.html" class="hover:text-rose-500 transition">About Us</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn text-3xl md:hidden" aria-label="Menu">☰</button>
+        </header>
+    </div>
+
+    <!-- Menu Page Content -->
+    <main class="menu-page">
+        <h1 class="page-title" id="pageTitle">Menu</h1>
+        <div class="menu-slider-container">
+            <div class="slider-wrapper">
+                <div class="menu-slides" id="menuSlides">
+
+                    <!-- Slide 1 -->
+                    <div class="menu-slide">
+                        <div class="menu-image">
+                            <img src="../Assets/Images/Christmas Menu.jpeg" alt="Menu Page 1">
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="menu-slide">
+                        <div class="menu-image">
+                            <img src="../Assets/Images/Main Menu.jpeg" alt="Menu Page 2">
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="menu-slide">
+                        <div class="menu-image">
+                            <img src="../Assets/Images/temp4.jfif" alt="Menu Page 3">
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="menu-slide">
+                        <div class="menu-image">
+                            <img src="../Assets/Images/temp5.jfif" alt="Menu Page 4">
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Arrow Controls -->
+                <button class="slider-arrow prev" id="prevArrow" aria-label="Previous">
+                    <svg viewBox="0 0 24 24" class="arrow-icon">
+                        <path d="M15 6l-6 6 6 6" stroke="white" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+
+                <button class="slider-arrow next" id="nextArrow" aria-label="Next">
+                    <svg viewBox="0 0 24 24" class="arrow-icon">
+                        <path d="M9 6l6 6-6 6" stroke="white" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+
+            </div>
+
+            <!-- Dots Navigation -->
+            <div class="slider-dots" id="sliderDots">
+                <span class="slider-dot active" data-slide="0"></span>
+                <span class="slider-dot" data-slide="1"></span>
+                <span class="slider-dot" data-slide="2"></span>
+                <span class="slider-dot" data-slide="3"></span>
+            </div>
+        </div>
+        
+        <!-- Order Button -->
+        <div class="order-section">
+            <a href="https://wa.me/c/917483089593" target="_blank" rel="noopener noreferrer" class="order-button" id="orderButton">
+                <span class="whatsapp-icon">
+                    <img src="../Assets/Images/wa logo.png" alt="WhatsApp" class="wa-img">
+                </span>
+                <span id="orderButtonText">Order Now</span>
+            </a>
+        </div>
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+
+            <!-- Left: Quick Links -->
+            <div class="footer-section footer-left">
+                <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links-list">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="Menu.html">Menu</a></li>
+                        <li><a href="../About/about.html">About Us</a></li>
+                    </ul>
+            </div>
+
+            <!-- Center: Logo -->
+            <div class="footer-section footer-center">
+                <img src="../Assets/Images/Logo Header.png" alt="Nuvé Logo" class="footer-logo-img">
+                <p class="footer-tagline">Comfort • Craft • Community</p>
+            </div>
+
+            <!-- Right: Follow Us -->
+            <div class="footer-section footer-right">
+                <h3 class="footer-title">Follow Us</h3>
+                <a href="https://instagram.com/nuve.blr" target="_blank" rel="noopener noreferrer" class="instagram-btn flex items-center justify-center w-12 h-12 mx-auto rounded-full bg-gradient-to-r from-purple-500 to-pink-500 hover:scale-110 transition-transform">
+                    <i class="fa-brands fa-instagram text-white text-xl"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Bottom Copyright Bar -->
+        <div class="footer-bottom">
+            © 2025 Nuvé. All rights reserved.
+        </div>
+    </footer>
+
+
+    <script src="../Assets/JS/script.js" defer></script>
+
+</body>
+</html>
