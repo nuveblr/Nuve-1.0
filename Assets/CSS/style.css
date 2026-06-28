@@ -14,6 +14,12 @@
 }
 
 @font-face {
+  font-family: "Afacad Medium Italic";
+  src: url("../../Assets/Fonts/Afacad-MediumItalic.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
   font-family: "Newsreader Regular";
   src: url("../../Assets/Fonts/Newsreader_14pt-Regular.ttf") format("truetype");
   font-weight: 400;
@@ -34,6 +40,12 @@
 @font-face {
   font-family: "Newsreader Semibold";
   src: url("../../Assets/Fonts/Newsreader_9pt-SemiBold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Newsreader Light";
+  src: url("../../Assets/Fonts/Newsreader_9pt-Light.ttf") format("truetype");
   font-weight: 700;
 }
 
@@ -374,8 +386,8 @@ header nav a:hover {
 }
 
 .reviewer-name {
-  font-family: 'Seaweed Script';
-  font-size: 1.5rem;
+  font-family: 'Newsreader Regular';
+  font-size: 1.2rem;
   font-weight: 600;
   color: #5a4a42;
   margin-bottom: 0.5rem;
@@ -552,6 +564,75 @@ footer {
   color: white;
   font-size: 1.25rem;
 }
+
+.whatsapp-btn {
+  background: #25D366;
+}
+
+.google-btn {
+  background: #ffffff;
+  border: 1px solid #ddd;
+}
+
+.google-btn i {
+  color: #DB4437; /* Google red */
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  transition: transform 0.25s ease;
+}
+
+.social-btn:hover {
+  transform: scale(1.15);
+}
+
+.social-btn i {
+  font-size: 1.25rem;
+}
+
+/* Specific colors */
+.instagram-btn i {
+  color: white;
+}
+
+.whatsapp-btn i {
+  color: white;
+}
+
+.google-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: white; /* clean white circle like real Google button */
+  transition: transform 0.25s ease;
+}
+
+.google-btn:hover {
+  transform: scale(1.15);
+}
+
+.google-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
 
 /* Bottom Bar */
 .footer-bottom {
