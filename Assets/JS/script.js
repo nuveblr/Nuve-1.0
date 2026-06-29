@@ -152,3 +152,80 @@ function initMenuSlider() {
 }
 
 initMenuSlider();
+
+// Lightbox functionality with swipe
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightboxImg");
+const closeBtn = document.querySelector(".lightbox-close");
+const menuImages = document.querySelectorAll(".menu-image img");
+
+let currentIndex = 0;
+
+// Open lightbox
+menuImages.forEach((img, index) => {
+  img.addEventListener("click", () => {
+    currentIndex = index;
+    showImage();
+    lightbox.classList.add("show");
+  });
+});
+
+// Show image based on index
+function showImage() {
+  lightboxImg.src = menuImages[currentIndex].src;
+}
+
+// Close lightbox
+closeBtn.addEventListener("click", () => {
+  lightbox.classList.remove("show");
+});
+
+lightbox.addEventListener("click", (e) => {
+  if (e.target !== lightboxImg) {
+    lightbox.classList.remove("show");
+  }
+});
+
+
+// ---------------------------
+// Swipe Support (Mobile)
+// ---------------------------
+
+let startX = 0;
+let endX = 0;
+
+lightbox.addEventListener("touchstart", (e) => {
+  startX = e.touches[0].clientX;
+});
+
+lightbox.addEventListener("touchmove", (e) => {
+  endX = e.touches[0].clientX;
+});
+
+lightbox.addEventListener("touchend", () => {
+  handleSwipe();
+});
+
+function handleSwipe() {
+  let diff = startX - endX;
+
+  if (Math.abs(diff) > 50) {
+    if (diff > 0) {
+      // Swipe Left → Next Image
+      nextImage();
+    } else {
+      // Swipe Right → Previous Image
+      prevImage();
+    }
+  }
+}
+
+function nextImage() {
+  currentIndex = (currentIndex + 1) % menuImages.length;
+  showImage();
+}
+
+function prevImage() {
+  currentIndex = (currentIndex - 1 + menuImages.length) % menuImages.length;
+  showImage();
+}
